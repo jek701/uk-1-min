@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 341" width="375" height="341">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="296.437" y1="91.1" x2="384.041" y2="93.14">
+			<stop offset="0.1" stop-color="#e1efff"  />
+			<stop offset="0.56" stop-color="#8cc3ff"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="332.02" y1="187.907" x2="381.009" y2="188.544">
+			<stop offset="0.52" stop-color="#87c0ff"  />
+			<stop offset="0.94" stop-color="#e2f0ff"  />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="247.216" y1="217.931" x2="374.024" y2="153.789">
+			<stop offset="0" stop-color="#99a0c0" stop-opacity="0.21" />
+			<stop offset="0.65" stop-color="#ffffff" stop-opacity="0.85" />
+		</linearGradient>
+		<radialGradient id="grd4" gradientUnits="userSpaceOnUse"  cx="43.5" cy="254.5" r="68.73">
+			<stop offset="0" stop-color="#f5f9fe"  />
+			<stop offset="0.47" stop-color="#f5f9fe" stop-opacity="0.3" />
+			<stop offset="1" stop-color="#f5f9fe"  />
+		</radialGradient>
+		<linearGradient id="grd5" gradientUnits="userSpaceOnUse"  x1="32.638" y1="189.625" x2="32.638" y2="319.375">
+			<stop offset="0" stop-color="#e3effc"  />
+			<stop offset="0.53" stop-color="#e3effc" stop-opacity="0.53" />
+			<stop offset="1" stop-color="#e3effc"  />
+		</linearGradient>
+		<linearGradient id="grd6" gradientUnits="userSpaceOnUse"  x1="21.775" y1="211.25" x2="21.775" y2="297.75">
+			<stop offset="0" stop-color="#cee3fa"  />
+			<stop offset="0.54" stop-color="#cee3fa" stop-opacity="0.42" />
+			<stop offset="1" stop-color="#cee3fa" stop-opacity="0.91" />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { opacity: 0.902;fill: url(#grd3) } 
+		.shp3 { fill: url(#grd4) } 
+		.shp4 { fill: url(#grd5) } 
+		.shp5 { fill: url(#grd6) } 
+		.shp6 { fill: #9dc6f5 } 
+	</style>
+	<path id="Layer" class="shp0" d="M313.42 50.45C290.88 75.54 290.68 112.09 310.14 134C325.14 150.94 350.36 157.21 374 150.14L374 34.31C364.67 31.03 337.55 27.84 313.42 50.45Z" />
+	<path id="Layer" class="shp1" d="M355.97 128.5C323.93 158.99 325.73 218.93 351.17 242.36C357.5 250.72 365.66 257.45 375 262L375 115C364.38 119.19 358.98 125.64 355.97 128.5Z" />
+	<path id="Layer" fill-rule="evenodd" class="shp2" d="M269.13 136.04L269.13 136.04C263.07 139.53 257.77 144.19 253.51 149.75C249.25 155.3 246.13 161.65 244.32 168.42C242.51 175.19 242.04 182.25 242.95 189.2C243.86 196.15 246.13 202.85 249.63 208.93L249.63 208.93L259.27 225.79C266.33 238.06 277.95 247 291.58 250.67C305.2 254.34 319.72 252.44 331.95 245.38L269.13 136.04ZM331.95 245.38L353.23 233L353.24 232.99L353.25 232.99C367 225.79 372.74 213.99 373.46 212.17C373.53 206.54 373.49 182.16 373.47 168.53C373.46 164.57 373.46 161.51 373.46 160.09C371.89 157.35 370.11 154.55 368.3 151.75C368.18 151.55 368.05 151.35 367.92 151.15C366.22 148.51 364.52 145.86 362.99 143.25L362.98 143.24C359.5 137.16 354.85 131.83 349.3 127.55C343.76 123.28 337.43 120.14 330.68 118.32C323.93 116.51 316.89 116.04 309.96 116.96C303.04 117.87 296.35 120.15 290.3 123.66C290.3 123.66 290.3 123.66 290.3 123.66L269.13 136.04L331.95 245.38Z" />
+	<path id="Layer" class="shp3" d="M0 168C23.07 168 45.2 177.11 61.52 193.34C77.83 209.56 87 231.56 87 254.5C87 277.44 77.83 299.44 61.52 315.67C45.2 331.89 23.07 341 0 341" />
+	<path id="Layer" class="shp4" d="M0 189.6C17.3 189.63 33.89 196.47 46.13 208.64C58.36 220.8 65.25 237.3 65.28 254.5C65.25 271.7 58.36 288.2 46.13 300.36C33.89 312.53 17.3 319.37 0 319.4" />
+	<path id="Layer" class="shp5" d="M0 211.2C5.72 211.2 11.38 212.32 16.67 214.5C21.95 216.67 26.75 219.86 30.79 223.88C34.84 227.9 38.05 232.68 40.24 237.93C42.42 243.18 43.55 248.81 43.55 254.5C43.55 265.98 38.96 277 30.79 285.12C22.63 293.24 11.55 297.8 0 297.8" />
+	<path id="Layer" class="shp6" d="M0.7 248.2C2.57 248.2 4.36 248.94 5.68 250.25C7 251.56 7.74 253.34 7.74 255.2C7.74 257.06 7 258.84 5.68 260.15C4.36 261.46 2.57 262.2 0.7 262.2" />
+</svg>

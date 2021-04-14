@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EFFIRIO</title>
+    <meta name="h1" content="EFFIRIO. Online therapy">
+    <meta name="description" content="EFFIRIO. Online therapy" />
+    <meta property="og:url" content="https://effirio.co.uk/" />
+    <meta property="og:title" content="EFFIRIO" />
+    <meta property="og:description" content="EFFIRIO. Online therapy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://effirio.co.uk/ogpic.jpg" />
+    <link rel="canonical" href="http://effirio.co.uk">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="application-name" content="EFFIRIO">
+
+    <meta language="change" lng="en">
+
+    <!--<link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Thin.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Black.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous">-->
+    <!--<link rel="preload" href="css/stylesheet.css" as="style">-->
+    <!--<link rel="preload" href="css/style-1-min.css" as="style">
+    <link rel="preload" href="js/1-min.js" as="script">-->
+    <!--<link rel="stylesheet" href="css/stylesheet.css">-->
+
+    <link rel="stylesheet" href="css/style-1-min.css">
+    <script src="js/1-min.js"></script>
+
+</head>
+<body onresize="body_resize();">
+   
+    <textarea id="console" style="display:none;position:fixed;width:20em;height:4em;top:0; border:1px solid #000;background:#fff;z-index:20;"></textarea>
+    <div id="xx" style="display:block;position:absolute; z-index: 5;"></div>
+    <div class="start-page">
+        <div class="header-button">
+            <img class="header-logo" src="img/logo.svg" />
+            <div e-name="header-burger" class="header-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="block menu blur">
+                <div name="b-mh" class="block menu-header f-semibold"><span>Психологическая</span><span class="ln-13-2">помощь</span></div>
+                <div name="b-ch" e-name="menu-problem" class="block menu-choice"><span>Какие проблемы решаем?</span><span></span></div>
+                <div name="b-ch" e-name="menu-help" class="block menu-choice"><span>Как мы помогаем</span><span></span></div>
+                <div name="b-ch" e-name="menu-our" class="block menu-choice"><span>Программа</span><span></span></div>
+                <div name="b-ch" e-name="menu-comand" class="block menu-choice"><span>Психологи</span><span></span></div>
+                <div name="b-ch" e-name="menu-history" class="block menu-choice"><span>Истории клиентов</span><span></span></div>
+                <div name="b-ch" e-name="free-start" class="block menu-choice"><span>Как с нами связаться</span><span></span></div>
+                <div name="b-ch" e-lang="svyaz" class="block menu-write ln-20_16"><span class="f-bold">Мы всегда на связи!</span><span class="f-bold">Напишите нам!</span><span></span></div>
+                <div e-name="menu-array" class="block menu-array"></div>
+                <div class="block menu-photo"><div class="block photo"></div></div>
+                <div class="block menu-vk"><div class="block vk"></div></div>
+            </div>
+        </div>
+        <div name="b-ws" class="ws" e-name="ws" start="0">
+            <img name="b-ws-green" class="ws-pic" src="img/ws-green.svg" />
+            <img name="b-ws-white" class="ws-pic" src="img/ws-white.svg" />
+            <div name="b-ws-shar"></div>
+            <div name="b-ws-text">
+                <div name="b-ws-1">
+                    26 человек получают
+                </div>
+                <div name="b-ws-2">
+                    советы и рекомендации
+                </div>
+                <div name="b-ws-3">
+                    прямо сейчас
+                </div>
+            </div>
+        </div>
+        <div name="b-1" class="block l-28 ln-41_6 f-black"><span class="f-32 u">есть свободная</span><span class="f-32 u ln-13-2">минута?</span></div>
+        <div name="b-2" class="block l-28 ln-26 f-bold"><span class="f-20 u ls-005">Пообщайтесь с</span><span class="f-20 u ls-005 ln-13-2">психологом</span></div>
+        <div name="b-3" class="block l-28 ln-20_8">
+            <span class="f-16">
+                Любая продолжительность
+            </span>
+            <span class="f-16 ln-13-2 f-bold">9 p</span>
+            <span class="f-16 ln-13-2">/ минута</span>
+        </div>
+        <div class="page-button" e-name="next-page-start"></div>
+        <div class="free f-bold box-4" e-name="free-start" e-lang="begin"><span>Начать бесплатно</span></div>
+    </div>
+
+    <a name="problem"></a>
+    <section e-name="page-problem" class="problem">
+        <div name="b-1" class="block l-28 ln-26 f-bold"><span class="f-20 u">Эмоции управляют</span><span class="f-20 u ln-13-2">нашей жизнью</span></div>
+        <!--<span class="line"></span>-->
+        <div name="b-2" class="block l-28 ln-25_92">
+            <span class="f-18">
+                Мы понимаем
+            </span><span class="f-18 ln-144-2">
+                психологическую основу
+            </span><span class="f-18 ln-144-3">
+                всех эмоций - и можем
+            </span><span class="f-18 ln-144-4">
+                предложить Вам
+            </span><span class="f-18 ln-144-5">
+                решение для
+            </span><span class="f-18 ln-144-6">
+                каждой
+            </span>
+        </div>
+        <div name="b-3" class="block l-28 f-black">
+            <span class="f-32 u">
+                Что Вы
+            </span><span class="f-32 u ln-13-2">
+                сейчас
+            </span><span class="f-32 u ln-13-3">
+                чувствуете ?
+            </span>
+        </div>
+        <div class="page-next" e-name="scrl-depression"></div>
+    </section>
+    <a name="depression"></a>
+    <section class="what-u-feel">
+    </section>
+    <a name="help"></a>
+    <section class="we-help">
+        <div name="b-1" class="block l-28 ln-26 f-bold">
+            <span class="f-20 u">
+                Мы действительно
+            </span><span class="f-20 u ln-13-2">
+                можем Вам помочь
+            </span>
+        </div>
+        <!--<span class="line"></span>-->
+        <div name="b-2" class="block">
+            <div name="b-21" class="block l-44 ln-25_92 f-bold">
+                <span class="f-18 u">
+                    работаем 24/7
+                </span>
+            </div>
+            <div name="b-22" class="block l-44 ln-25_92">
+                <span class="f-18">
+                    Психолог всегда на связи, когда
+                </span><span class="f-18 ln-144-2">
+                    он нужен!
+                </span><span class="f-18 ln-144-3">
+                    Напишите нам в WhatsApp
+                </span>
+            </div>
+            <div name="b-23" class="free box-2" e-name="free-help-1"><span>Написать сообщение</span></div>
+        </div>
+
+        <div name="b-3" class="block">
+            <div name="b-21" class="block l-44 ln-25_92 f-bold">
+                <span class="f-18 u">
+                    Ответим СРАЗУ
+                </span>
+            </div>
+            <div name="b-22" class="block l-44 ln-25_92">
+                <span class="f-18">
+                    Если мы не ответим за 1 минуту,
+                </span><span class="f-18 ln-144-2">
+                    Вы получите 30 минут
+                </span><span class="f-18 ln-144-3">
+                    консультации бесплатно!
+                </span>
+            </div>
+            <div name="b-33" class="" e-name="free-help-2"><span>Запустить таймер</span></div>
+        </div>
+
+        <div name="b-4" class="block ln-17_6">
+            <span class="f-16">00:60</span>
+        </div>
+
+        <div name="b-5" class="block">
+            <div name="b-51" class="block l-28 ln-20_8">
+                <span class="f-16">
+                    А теперь <u e-name="ws-timer">нажмите здесь,</u>
+                </span><span class="f-16 ln-13-2">
+                    чтобы отправить нам
+                </span><span class="f-16 ln-13-3">
+                    сообщение в WhatsApp.
+                </span><span class="f-16 ln-13-4">
+                    Мы ждем!
+                </span>
+            </div>
+        </div>
+
+
+        <div name="b-6" class="block">
+            <div name="b-61" class="block l-28 ln-20_8">
+                <span class="f-16">
+                    Нам нравится, что Вы любите точность
+                </span><span class="f-16 ln-13-2">
+                    и пунктуальность ;)
+                </span><span class="f-16 ln-13-3">
+                    Но, мы понимаем Ваше беспокойство
+                </span><span class="f-16 ln-13-4">
+                    по поводу своего самочувствия.
+                </span>
+            </div>
+            <div name="b-62" class="block l-28 ln-20_8">
+                <span class="f-16">
+                    Сообщите промокод “Я ХОЧУ
+                </span><span class="f-16 ln-13-2">
+                    ИЗМЕНИТЬ СВОЕ БУДУЩЕЕ!”, чтобы
+                </span><span class="f-16 ln-13-3">
+                    получить консультацию на 100 минут
+                </span><span class="f-16 ln-13-4">
+                    БЕСПЛАТНО! <u e-name="ws-promo"><b>Нажмите здесь</b></u> для
+                </span><span class="f-16 ln-13-5">
+                    отправки промокода нам в WhatsApp
+                </span>
+            </div>
+            <div name="b-63" class="block"></div>
+        </div>
+    </section>
+    <a name="our"></a>
+    <section class="our-methods">
+        <div name="b-1" class="block l-28 ln-26 f-bold">
+            <span class="f-20 u">Наши методики имеют</span>
+            <span class="f-20 u ln-144-2">клинически</span>
+            <span class="f-20 u ln-144-3">подтвержденные и</span>
+            <span class="f-20 u ln-144-4">измеримые результаты</span>
+        </div>
+        <!--<span class="line"></span>-->
+        <div name="b-2" class="block l-28 ln-25_92">
+            <span class="f-18">В отличие от непонятных итогов</span>
+            <span class="f-18 ln-144-2">работы с психологами в других</span>
+            <span class="f-18 ln-144-3">сервисах, у Вас будет:</span>
+        </div>
+        <div name="b-3" class="block">
+            <!--<div class="block fon">
+            </div>-->
+            <div name="b-31" class="block l-15">
+                <div name="b-311" class="block l-28 ln-26 f-semibold">
+                    <span class="f-20 u ls-005">
+                        ПСИХОЛОГИЧЕСКАЯ
+                    </span><span class="f-20 u ls-005 ln-13-2">
+                        ПРОГРАММА
+                    </span>
+                </div>
+                <div name="b-312" class="block l-28 ln-23_04">
+                    <span class="f-16">
+                        - направлена на решение Вашей
+                    </span><span class="f-16 ln-144-2">
+                        проблемы
+                    </span><span class="f-16 ln-144-3">
+                        
+                    </span><span class="f-16 ln-144-4">
+                        - содержит конкретные действия -
+                    </span><span class="f-16 ln-144-5">
+                        никаких абстрактных советов и
+                    </span><span class="f-16 ln-144-6">
+                        никакой "воды"
+                    </span>
+                </div>
+                <div name="b-313" class="block l-180 ln-14">
+                    <span class="f-12">Более 100 программ</span>
+                </div>
+            </div>
+            <div name="b-32" class="block l-15">
+                <div name="b-321" class="block l-28 ln-26 f-semibold">
+                    <span class="f-20 u ls-005">
+                        ОТЧЕТ ПСИХОЛОГА
+                    </span>
+                </div>
+                <div name="b-322" class="block l-28 ln-23_04">
+                    <span class="f-16">
+                        - детальный анализ всей ситуации
+                    </span><span class="f-16 ln-144-2">
+                        
+                    </span><span class="f-16 ln-144-3">
+                        - подробные рекомендации и
+                    </span><span class="f-16 ln-144-4">
+                        отслеживание прогресса
+                    </span>
+                </div>
+                <div name="b-323" class="block l-180 ln-14">
+                    <span class="f-12">Быстрый результат</span>
+                </div>
+            </div>
+            <div name="b-33" class="block l-15">
+                <div name="b-331" class="block l-28 ln-26 f-semibold">
+                    <span class="f-20 u ls-005">
+                        НЕОГРАНИЧЕННАЯ
+                    </span><span class="f-20 u ls-005 ln-13-2">
+                        ПОДДЕРЖКА
+                    </span>
+                </div>
+                <div name="b-332" class="block l-28 ln-23_04">
+                    <span class="f-16">
+                        - полное сопровождение на
+                    </span><span class="f-16 ln-144-2">
+                        протяжении всей программы
+                    </span><span class="f-16 ln-144-3">
+                        
+                    </span><span class="f-16 ln-144-4">
+                        - обсуждение результатов и
+                    </span><span class="f-16 ln-144-5">
+                        любых проблем
+                    </span>
+                </div>
+                <div name="b-333" class="block l-180 ln-14">
+                    <span class="f-12">Личный психолог</span>
+                </div>
+            </div>
+
+            <!--<div name="b-34" class="block"></div>-->
+
+
+            <div name="b-35" class="block l-15">
+                <div name="b-352" class="block l-28 ln-20_16">
+                    <span class="f-14">
+                        Мы не просто подбираем психолога, а
+                    </span><span class="f-14 ln-144-2">
+                        составляем психологическую
+                    </span><span class="f-14 ln-144-3">
+                        программу именно для Вас и для
+                    </span><span class="f-14 ln-144-4">
+                        решения Вашей проблемы.
+                    </span><span class="f-14 ln-144-5">
+                        
+                    </span><span class="f-14 ln-144-6">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a name="comand"></a>
+    <section class="comand">
+        <div name="b-1" class="block l-28 ln-26">
+            <span class="f-20 u f-bold">
+                Сила В команде
+            </span>
+        </div>
+        <!--<span class="line"></span>-->
+        <div name="b-2" class="block l-28 ln-25_92">
+            <span class="f-18">
+                В составлении методик,
+            </span><span class="f-18 ln-144-2">
+                разработанных и применяемых
+            </span><span class="f-18 ln-144-3">
+                нами для формата онлайн,
+            </span><span class="f-18 ln-144-4">
+                участвовали многие ученые и
+            </span><span class="f-18 ln-144-5">
+                психологи из России, Европы и
+            </span><span class="f-18 ln-144-6">
+                Америки.
+            </span>
+        </div>
+        <!--<div name="b-3" class="block">
+            <img src="img/command.jpg" />
+        </div>-->
+        <div name="b-4" class="block l-28 ln-25_92">
+            <span class="f-18">
+                Мы хотели бы выразить огромную
+            </span><span class="f-18 ln-144-2">
+                благодарность нашим коллегам
+            </span>
+        </div>
+        <div name="b-5" class="block blur">
+            <div name="b-51" class="block">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 23L13.84 21.849C9.72 17.7771 7 15.0916 7 11.7956C7 9.11008 8.936 7 11.4 7C12.792 7 14.128 7.70627 15 8.82234C15.872 7.70627 17.208 7 18.6 7C21.064 7 23 9.11008 23 11.7956C23 15.0916 20.28 17.7771 16.16 21.8578L15 23Z" fill="#8764C1"></path>
+                </svg>
+                <span class="block f-16 f-semibold">Вы - лучшие!</span>
+            </div>
+            <div name="b-52" class="block"></div>
+            <div e-name="who-full" class="block who-full">
+                <span class="f-12">Посмотреть весь список</span>
+                <div class="block who-full-img"></div>
+            </div>
+        </div>
+    </section>
+    <a name="we-near"></a>
+    <section e-name="page-we-near" class="we-near">
+        <div name="b-1" class="block l-28 ln-26 f-bold">
+            <span class="f-20 u">
+                Мы будем всегда рядом,
+            </span><span class="f-20 u ln-144-2">
+                чтобы помочь
+            </span>
+        </div>
+        <!--<span class="line"></span>-->
+        <div name="b-2" class="block l-28 ln-25_92">
+            <span class="f-18">
+                Люди часто остаются один на один
+            </span><span class="f-18 ln-144-2">
+                со своими проблемами...
+            </span>
+        </div>
+        <div name="b-3" class="block ln-20_16">
+            <div name="b-31">
+                <span class="f-14">
+                    Не хватает поддержки
+                </span><span class="f-14 ln-144-2">
+                    близких людей?
+                </span><span class="f-14 ln-144-3">
+                    
+                </span>
+            </div>
+        </div>
+        <div name="b-4" class="block ln-20_16">
+            <div name="b-41">
+                <span class="f-14">
+                    Пробовали заменить
+                </span><span class="f-14 ln-144-2">
+                    психолога общением с
+                </span><span class="f-14 ln-144-3">
+                    подругой в кафе, но
+                </span><span class="f-14 ln-144-4">
+                    услышали только:
+                </span><span class="f-14 ln-144-5">
+                    "Не парься, всё
+                </span><span class="f-14 ln-144-6">
+                    пройдет"
+                </span>
+            </div>
+        </div>
+        <div name="b-5" class="block ln-20_16">
+            <div name="b-51">
+                <span class="f-14">
+                    Долгие визиты
+                </span><span class="f-14 ln-144-2">
+                    к психологу
+                </span><span class="f-14 ln-144-3">
+                    стоят дорого, но не
+                </span><span class="f-14 ln-144-4">
+                    дают результатов?
+                </span><span class="f-14 ln-144-5">
+                    
+                </span>
+            </div>
+        </div>
+        <div name="b-6" class="block ln-20_16">
+            <div name="b-61">
+                <span class="f-14">
+                    Вас никто не
+                </span><span class="f-14 ln-144-2">
+                    понимает?
+                </span><span class="f-14 ln-144-3">
+                    
+                </span>
+            </div>
+        </div>
+
+        <div name="b-7" class="block l-28 ln-25_92 f-semibold">
+            <span class="f-18">
+                Знакомо,  правда?
+            </span>
+        </div>
+        <div name="b-8" class="block l-28 ln-25_92">
+            <span class="f-18">
+                Убедитесь сами - выход есть!
+            </span>
+        </div>
+
+    </section>
+    <a name="history"></a>
+    <section e-name="page-we-history" class="we-history">
+        <div name="b-91" class="block l-28 ln-26 f-bold">
+            <span class="f-20 u">
+                Послушайте наши
+            </span><span class="f-20 u ln-13-2">
+                истории
+            </span>
+        </div>
+        <!--<span class="line"></span>-->
+        <div name="b-92" class="block l-15">
+            <div name="b-921" class="block l-13 ln-23_04">
+                <span class="f-16">
+                    Истории наших клиентов - это не
+                </span><span class="f-16 ln-144-2">
+                    описание проблем.
+                </span><span class="f-16 ln-144-4">
+                    Это - счастливые истории,
+                </span><span class="f-16 ln-144-5">
+                    основанные на наших
+                </span><span class="f-16 ln-144-6">
+                    психологических программах.
+                </span>
+            </div>
+            <div name="b-922" class="block ln-14">
+                <span class="f-10">У нас есть кое-что для каждого</span>
+            </div>
+        </div>
+        <div name="b-93" class="block l-28 ln-20_16">
+            <span class="f-14">
+                Мы помогаем людям на всех континентах
+            </span><span class="f-14 ln-144-2">
+                справиться со сложностями, преодолеть
+            </span><span class="f-14 ln-144-3">
+                различные препятствия, стать тем, кем
+            </span><span class="f-14 ln-144-4">
+                всегда хотелось быть.
+            </span>
+        </div>
+        <div name="b-94" class="block l-44 ln-20_16">
+            <span class="f-14">
+                Нажмите на
+            </span>
+            <span></span>
+            <span class="f-14">
+                , чтобы прослушать.
+            </span>
+        </div>
+    </section>
+    <a name="not-odin"></a>
+    <section class="not-odin">
+        <div name="b-1" class="block l-28 ln-26 f-bold">
+            <span class="f-20 u">
+                Не оставайтесь с
+            </span><span class="f-20 u ln-13-2">
+                проблемами наедине
+            </span>
+        </div>
+        <!--<span class="line"></span>-->
+        <div name="b-2" class="block l-28 ln-25_92">
+            <span class="f-18">
+                Путь к решению Вашей проблемы
+            </span><span class="f-18 ln-144-2">
+                начинается с первого сообщения
+            </span>
+        </div>
+        <!--<div name="b-3" class="block">
+            <img src="img/not-odin.jpg" />
+        </div>-->
+        <div name="b-4" class="free box-4" e-name="not-odin-1">
+            <span></span>
+        </div>
+    </section>
+    <a name="stress"></a>
+    <section class="stress">
+        <!--<div name="b-1" class="block">
+            <svg width="375" height="2" viewBox="0 0 375 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1H375" stroke="#FFB906" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="5 10" />
+            </svg>
+        </div>-->
+        <div name="b-2" class="block l-28 ln-41_6 f-black">
+            <span class="f-32 u">
+                Находитесь в
+            </span><span class="f-32 u ln-13-2">
+                стрессовой
+            </span><span class="f-32 u ln-13-3">
+                ситуации?
+            </span>
+        </div>
+        <div name="b-3" class="block l-28 ln-25_92">
+            <span class="f-18">
+                Попробуйте выполнить
+            </span><span class="f-18 ln-144-2">
+                простое упражнение
+            </span>
+        </div>
+        <div name="b-4" class="free box-4" e-name="stress-1">
+            <span>Начать упражнение</span>
+        </div>
+    </section>
+    <a name="karta"></a>
+    <section class="karta">
+        <div name="b-1" class="block ln-28_8 f-bold">
+            <span class="f-20 u">
+                Мы рядом
+            </span>
+        </div>
+        <!--<span name="b-11" class="line"></span>-->
+        <div name="b-2" class="block">
+            <span class="f-11">
+                Москва,
+            </span><span class="f-11">
+                Тверская
+            </span><span class="f-11 f-bold">
+                hello@effirio.co.uk
+            </span>
+            <!--<img src="img/adress.jpg" />-->
+        </div>
+        <!--<div name="b-3" class="block">
+            <img src="img/1-min.svg" />
+        </div>-->
+        <div name="b-4" class="block">
+            <div name="b-40" e-name="self-site" class="block self-site"></div>
+            <div name="b-41" class="block l-15 ln-18_2 f-bold">
+                <span class="f-14">
+                    WhatsApp:
+                </span><span class="f-14 ln-13-2">
+                    +7 (967) 125 55 80
+                </span>
+            </div>
+            <div class="block menu-photo-mini"><div class="block photo-mini"></div></div>
+            <div class="block menu-vk-mini"><div class="block vk-mini"></div></div>
+            <div name="b-42" class="block l-15 ln-15_72">
+                <span class="f-12">
+                    
+                </span><span class="f-12 ln-13-2">
+                    </u>
+                </span><span class="f-12 ln-13-3">
+                    <u>соглашением</u>
+                </span>
+            </div>
+            <span name="b-43" class="line"></span>
+            <div name="b-44" class="block l-15 ln-15_72">
+                <span class="f-12">
+                    
+                </span><span class="f-12 ln-13-2">
+                    
+                </span><span class="f-12 ln-13-3">
+                    
+                </span><span class="f-12 ln-13-4">
+                    </u>
+                </span>
+            </div>
+            <div name="b-45" class="block l-15 ln-10_4">
+                <span class="f-8">
+                    
+                </span><span class="f-8 ln-13-2">
+                    
+                </span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
